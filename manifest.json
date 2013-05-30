@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Crazy link",
+  "description": "This extension navigates to the first result from a google search using the title of the current page as query.",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "https://google.com/",
+    "https://*.google.com/",
+    "http://google.com/",
+    "http://*.google.com/"
+  ],
+
+  "background": {
+    "scripts": [
+      "underscore.js",
+      "zepto.js",
+      "background.js"
+    ]
+  },
+  
+  "browser_action": {
+    "default_icon": "icon.png"
+    // "default_popup": "popup.html"
+  }
+}
